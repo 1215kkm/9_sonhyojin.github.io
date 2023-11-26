@@ -1,0 +1,323 @@
+
+
+/*layouts*/
+.pc {display: block;}
+.mo {display: none;}
+
+#header {width: 100%; min-width: 1200px; height: 111px; background: #f9f9f9; position: absolute; top:0; z-index: 3; border-bottom: 1px solid #fff; transition: .5s;}
+#header:hover {background: rgba(0,27,59,0.5);}
+#visual_main {width: 100%; min-width: 1200px; height: 100vh; background: url('../images/visual_bg.jpg') center no-repeat; overflow: hidden; position: relative; margin-top: 111px;}
+#section_box {position: relative; z-index: 1;}
+#section1 {width: 100%; min-width: 1200px; height: 173px; }
+#section2 {width: 100%; min-width: 1200px; height: 658px; background: #f2f2f2;}
+#section3 {width: 100%; min-width: 1200px; height: 478px; background: url('../images/bg_section3.png') center no-repeat}
+#section4 {width: 100%; min-width: 1200px; height: 470px; background: #f9f9f9;padding-top: 80px; box-sizing: border-box;}
+#section5 {width: 100%; min-width: 1200px; height: 600px; padding-top: 80px; }
+#footer {width: 100%; min-width: 1200px; height: 233px; background: #4c6579;}
+
+
+
+
+
+/*header*/
+#header h1 {width: 348px; height: 79px; float: left; margin-left: 156px; margin-top: 20px;}
+#header .gnb {height: 78px; float: right; margin-top: 32px; margin-right: 32px; }
+#header .gnb > li {height: 78px; line-height: 78px; font-size: 20px; font-weight: bold; display: inline-block; position: relative;}
+#header .gnb > li > a {color: #333; display: block; padding: 0 40px; }
+#header .gnb > li .lnb {position: absolute; width: 100%; z-index: 2; font-weight: normal; display: none;}
+#header .gnb > li .lnb li {font-size: 18px; height: 50px; line-height: 50px; letter-spacing: -1px; text-align: center;}
+#header .lnb_bg {position: absolute; width: 100%; height: 300px; background: rgba(255,255,255,0.97); top:111px; display: none;}
+
+
+
+#header .hambuger {width: 78px; height: 78px; float: right; margin-top: 32px; margin-right: 121px; cursor: pointer; z-index: 10; transition: .3s; position: relative;}
+#header .hambuger span {width: 29px; height: 3px; background: #970022; position: absolute; left: 25px; border-radius: 0 0 100px 0 }
+#header .hambuger span:nth-child(1) {top: 27px;}
+#header .hambuger span:nth-child(2) {width: 22px; top: 37px;}
+#header .hambuger span:nth-child(3) {top: 47px;}
+
+
+
+
+/*visual_main*/
+#visual_main .building {width: 100%; height: 100%; background: url('../images/visual_building.png') center bottom -300px no-repeat; position: absolute; }
+
+#visual_main .text_box {position: absolute; top: 200px; left:50%; transform: translateX(-50%); text-align: center; height: 300px; width: 600px;}
+
+#visual_main .text_box em {font-style: normal; font-size: 23px; color: #fff; display: block; font-weight: bold; padding-bottom: 20px; text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);}
+#visual_main .text_box strong {font-size: 90px; color: #970022; font-weight: bold; line-height: 86px; text-shadow: 3px 3px 0 #ca9a5c;}
+#visual_main .text_box strong span {display: block;opacity: 0;}
+#visual_main .text_box strong span:nth-child(1) {animation: text_ani1 1s forwards;}
+@keyframes text_ani1 {
+    0% {margin-left: 300px; opacity: 0;}
+    100% {margin-left: 0px; opacity: 1;}
+}
+#visual_main .text_box strong span:nth-child(2) {animation: text_ani2 1s forwards; animation-delay: .3s;}
+@keyframes text_ani2 {
+    0% {margin-right: 300px; opacity: 0;}
+    100% {margin-right: 0px; opacity: 1;}
+}
+#visual_main .text_box strong span:nth-child(3) {animation: text_ani1 1s forwards; animation-delay: .6s;}
+
+#visual_main .text_box strong span em {color:#ffdec5; font-style: normal;}
+
+
+#visual_main .text_box hr {width: 237px; height: 5px; background: #970022; margin: 30px auto;animation: bar 1s forwards; animation-delay: .9s; opacity: 0; border: 0;}
+@keyframes bar {
+    0% {width: 0;opacity: 0;}
+    100% {width: 200px;opacity: 1;}
+}
+
+#visual_main .text_box p {font-size: 25px; color: #fff; animation: up 2s forwards; animation-delay: 1.2s; opacity: 0; font-weight: bold;  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);}
+@keyframes up {
+    0% {margin-top: 100px; opacity: 0;}
+    100% {margin-top: 0px; opacity: 1;}
+}
+
+
+
+/*section1*/
+#section1 > div {width: 1200px; height: 200px; background: #fff; margin: 0 auto; text-align: center; box-shadow: 0 2px 20px rgba(0,0,0,0.1); position: relative; z-index: 3; padding-top: 15px; box-sizing: border-box;}
+
+#section1 > div > a {display: inline-block; margin: 0 3px;}
+#section1 > div > a > ul {width: 270px; height: 170px; background: #a11938; position: relative; transition: .5s;}
+#section1 > div > a > ul li.border {box-shadow: 0 0 0 4px #c79a59 inset; width: 257px; height: 158px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+#section1 > div > a:hover > ul {background: #f8eee7;}
+#section1 > div > a > ul li.icon {width: 100%; height: 51px; margin: 21px auto 16px auto; float: left; }
+#section1 > div > a > ul li.title {width: 100%; height: 34px; font-size: 18px; font-weight: bold; clear: both; color: #fff;}
+#section1 > div > a > ul li.exp {width: 100%; height: 34px; font-size: 12px; color: #f6d3a1;}
+
+
+
+/*section2*/
+#section2 > div {width: 1200px; margin: 0 auto; padding-top: 40px; box-sizing: border-box;}
+#section2 > div h2 {width: 100%; height: 100px; font-size: 36px; text-align: center; line-height: 70px;}
+#section2 > div h2 span {display: block; font-size: 18px; color: #777; font-weight: normal; line-height: 20px;}
+
+#section2 .content ul {width: 288px; height: 307px; box-shadow: 0 2px 20px rgba(0,0,0,0.07); background: #fff; position: relative; float: left; margin-right: 15px;}
+
+
+#section2 .content ul:last-child {margin-right: 0;}
+
+#section2 .content ul li.icon {position: absolute; width: 52px; height: 23px; line-height: 23px; background: #ca9a5c; color:#fff; text-align: center; left: 20px; top: 39px; font-size: 13px}
+#section2 .content ul li.tit {width: 248px; height: 30px; font-size: 18px; font-weight: bold; margin-top: 69px; float: left; margin-left: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#section2 .content ul li.tit a {color: #444;}
+#section2 .content ul li.exp {width: 248px; float: left; margin-left: 20px; font-size: 14px; line-height: 25px}
+#section2 .content ul li.exp a {color:#777; }
+#section2 .content ul li.day {position: absolute; right: 20px; bottom: 15px; font-size: 14px; color:#777;}
+
+#section2 .content ul:hover {background: #90011f;}
+#section2 .content ul:hover li.tit a {color: #fff;}
+#section2 .content ul:hover li.exp a {color: #fee0e0;}
+#section2 .content ul:hover li.day {color: #969696;}
+
+
+
+
+
+/*section3*/
+#section3 > div {width: 1200px; height: 100%; margin: 0 auto; position: relative;}
+
+#section3 > div a {position: absolute; width: 288px; height: 122px; background: #fff; }
+#section3 > div a li.icon {width: 49px; height: 49px; float: left; margin: 33px 0 0 20px; }
+#section3 > div a li.tit {width: 200px; height: 30px; float: left; margin: 27px 0 0 15px; font-size: 18px; font-weight: bold; color: #444;}
+#section3 > div a li.exp {width: 200px; height: 50px; float: left; margin: 0px 0 0 15px; font-size: 14px; color: #898989;}
+
+#section3 > div a:hover {background: #94836d url('../images/bg_section3_hover.png') center right no-repeat;}
+#section3 > div a:hover li.tit {color: #fff;}
+#section3 > div a:hover li.exp {color: #ecd2b1;}
+
+
+
+
+
+#section3 > div a:nth-of-type(1) {top: 52px; left: 0; opacity: 0;}
+#section3 > div a:nth-of-type(2) {top: 182px; left: 0; opacity: 0;}
+#section3 > div a:nth-of-type(3) {top: 312px; left: 0; opacity: 0;}
+#section3 > div a:nth-of-type(4) {top: 52px; right: 0; opacity: 0;}
+#section3 > div a:nth-of-type(5) {top: 182px; right: 0; opacity: 0;}
+#section3 > div a:nth-of-type(6) {top: 312px; right: 0; opacity: 0;}
+
+#section3.action a:nth-of-type(1) {animation: sec3_1 1s forwards;}
+#section3.action a:nth-of-type(2) {animation: sec3_2 1s forwards; animation-delay: 0.1s;}
+#section3.action a:nth-of-type(3) {animation: sec3_3 1s forwards; animation-delay: 0.2s;}
+#section3.action a:nth-of-type(4) {animation: sec3_4 1s forwards; animation-delay: 0.5s;}
+#section3.action a:nth-of-type(5) {animation: sec3_5 1s forwards; animation-delay: 0.4s;}
+#section3.action a:nth-of-type(6) {animation: sec3_6 1s forwards; animation-delay: 0.3s;}
+
+
+@keyframes sec3_1 {
+    0% {left:400px; top:182px; opacity: 0;}
+    100% {left:0px; top:52px; opacity: 1;}
+}
+@keyframes sec3_2 {
+    0% {left: 400px; top: 182px; opacity: 0}
+    100% {left: 0; top: 182px; opacity: 1}
+}
+@keyframes sec3_3 {
+    0% {left: 400px; top: 182px; opacity: 0}
+    100% {left: 0; top: 312px; opacity: 1}
+}
+@keyframes sec3_4 {
+    0% {right: 400px; top: 182px; opacity: 0}
+    100% {right: 0; top: 52px; opacity: 1}
+}
+@keyframes sec3_5 {
+    0% {right: 400px; top: 182px; opacity: 0}
+    100% {right: 0; top: 182px; opacity: 1}
+}
+@keyframes sec3_6 {
+    0% {right: 400px; top: 182px; opacity: 0}
+    100% {right: 0; top: 312px; opacity: 1}
+}
+
+
+
+
+/*section4*/
+#section4 > div {width: 1200px; height: 307px; margin:0 auto; }
+#section4 > div .info {width: 288px; height: 307px; float: left; background: #960121; box-shadow: 0 0 20px rgba(0,0,0,0.2); position: relative; }
+#section4 > div .health {width: 898px; height: 307px; float: right; background: #fff; box-shadow: 0 0 20px rgba(0,0,0,0.2)}
+#section4 .info .section4_bg img {position: absolute; bottom: 0; left: 0; opacity: 0.5;}
+
+
+#section4 .info .phone {width: 288px; height: 154px; text-align: center}
+#section4 .info .phone img {margin: 15px 0}
+#section4 .info .phone h3 {font-size: 18px; color: #fff; height: 20px; font-weight: normal;}
+#section4 .info .phone p.callnum {height: 42px; line-height: 42px; font-size: 30px; }
+#section4 .info .phone p.callnum a {color:#ca9a5c}
+
+#section4 .info .time {width: 288px; height: 153px; background: #9b7b6c;}
+#section4 .info .time table { margin: 28px 0 0 28px; float: left; color: #fff; font-size: 15px}
+#section4 .info .time table tr {text-align: center;}
+#section4 .info .time table tr th {width: 63px; height: 26px; background: #ca9a5c; font-weight: normal; font-weight: normal; }
+#section4 .info .time table tr td {text-indent: 10px; font-weight: normal;}
+#section4 .info .time table tr:nth-child(2n) td {height: 9px; }
+
+#section4 .health h2 {height: 20px; line-height: 20px; margin-left: 22px; font-size: 20px; margin-bottom: 54px; margin-top: 22px; color: #555; font-weight: bold;}
+#section4 .health h2 span {color:#960121; font-weight: normal; margin-left: 10px; font-size: 17px;}
+#section4 .health .video_box {width: 860px; height: 180px; margin-left: 20px; }
+#section4 .health .video_box ul {width: 257px; height: 180px; float: left; margin-right: 43px; }
+#section4 .health .video_box ul:last-child {margin-right: 0;}
+
+#section4 .health .video_box ul li.movie {width: 257px; height: 138px; position: relative;}
+#section4 .health .video_box ul li.movie button.play {width: 60px; height: 60px; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: #fff; transition: .2s; cursor: pointer; border-radius: 50%; font-size: 60px;}
+#section4 .health .video_box ul li.movie button.play:hover {background: rgba(,0,0,0.9); color: #fff; transform:translate(-50%,-50%) scale(1.3)}
+#section4 .health .video_box ul li:hover {background: rgba(0,0,0,0.8);}
+#section4 .health .video_box ul li.tit {height: 40px; line-height: 40px;}
+
+
+
+
+/*section5*/
+#section5 > h2 {width: 100%; height: 100px; text-align: center; font-size: 36px; line-height: 70px; margin-bottom: 70px;}
+#section5 > h2 span {font-size: 18px; color: #777; line-height: 23px; font-weight: normal; display: block;}
+#section5 .map_box {position: relative;}
+#section5 .pop {width: 256px; height: 245px; position: absolute; left: 60%; top:150px; z-index: 2; cursor: move;}
+
+
+
+
+.sidebox {perspective: 1000px; width: 100%; height: 100vh; overflow: hidden; position: fixed; top:0; z-index: -1;}
+.sidemenu {width: 100%; height: 100vh; position: fixed; top:0; right:-100%; background: rgba(38,57,79,0.97); transform: rotateY(-180deg); transform-origin: right; transition: .5s cubic-bezier(.04,.53,.25,.95); }
+.sidemenu.action {transform: rotateY(0deg); right: 0}
+
+.sidemenu .btn_close {position: absolute; left: 50%; top: 100px; width: 80px; height: 80px; cursor: pointer; transform: translateX(-50%)}
+.sidemenu .btn_close:before,
+.sidemenu .btn_close:after {content: ""; position: absolute; width: 100%; height: 3px; background: #fff; top: 40px }
+.sidemenu .btn_close:before {transform: rotate(45deg); transition:.5s cubic-bezier(1,.27,.15,1.66)}
+.sidemenu .btn_close:after {transform: rotate(-45deg); transition:.5s cubic-bezier(1,.27,.15,1.66)};
+
+
+.sidemenu .btn_close:hover:before,
+.sidemenu .btn_close:hover:after {box-shadow: 
+    0 0 5px #073f6b,
+    0 0 10px #349aec, 
+    0 0 20px #349aec, 
+    0 0 20px #349aec, 
+    0 0 30px #349aec; }
+.sidemenu .btn_close:hover:before {transform: rotate(225deg)}
+.sidemenu .btn_close:hover:after {transform: rotate(-225deg)}
+
+
+.gnb2 {width: 60%; min-width: 800px; text-align: center; position: relative; height: 600px; left: 50%; transform: translate(-50%,0); top:200px}
+.hidden_menu > li {font-size: 26px; display: inline-block; vertical-align: top; width: 18%; height: 78px; line-height: 78px; position: relative;}
+.hidden_menu > li > a {color: #ffcea9;}
+
+.hidden_menu > li .lnb2 {position: absolute; width: 100%; }
+.hidden_menu > li .lnb2 li {font-size: 18px; height: 70px; line-height: 70px; letter-spacing: -1px;}
+.hidden_menu > li .lnb2 li a {color:#f0f0f0}
+
+
+.member_box {position: absolute; top: 750px; left:50%; transform: translate(-50%,0); width: 100%; text-align: center;}
+.member_box a {display: inline-block; width: 200px; height: 60px; text-align: center; line-height: 60px; color: #222; background: rgba(255,255,255,0.8); transition: .2s}
+.member_box a:hover {background: rgba(255,255,255,1);}
+
+
+/*visual_sub*/
+#visual_sub {width: 100%; min-width: 1200px; height: 356px; background: url('../images/visual_bg.jpg') center top -300px no-repeat; position: relative; overflow: hidden;}
+#visual_sub .building {width: 100%; height: 100%; background: url('../images/visual_building.png')center top no-repeat; position: absolute; top: 130px;}
+#visual_sub .text_box {position: absolute; left: 50%; top: 180px; transform: translate(-50%,0); text-align: center; width: 1000px;}
+#visual_sub .text_box span {font-size: 50px; color: #fff; font-weight: bold; line-height: 60px; position: absolute; opacity: 0;
+    text-shadow: 0 0 50px rgba(0, 0, 0, 0.3), /*큰그림자*/
+                 0 0 4px rgba(0, 0, 0, 0.1);}
+#visual_sub .text_box span em {color: #ffdec5; font-style: normal;}
+#visual_sub .text_box span:nth-child(1) {animation: text_sub1 1s forwards; left: 100%; transform: translateX(-130%); width: 250px;}
+#visual_sub .text_box span:nth-child(2) {animation: text_sub2 1s forwards; left: -100%; animation-delay: .3s; transform: translateX(-10%)}
+#visual_sub .text_box span:nth-child(3) {animation: text_sub3 1s forwards; left: 100%; top:50px; animation-delay: .6s; transform: translateX(-50%);}
+@keyframes text_sub1 {
+    0% {left: 100%; opacity: 0;}
+    100% {left:50%; opacity: 1;}
+}
+@keyframes text_sub2 {
+    0% {left: -100%; opacity: 0;}
+    100% {left:50%; opacity: 1;}
+}
+@keyframes text_sub3 {
+    0% {left: 100%; opacity: 0;}
+    100% {left:50%; opacity: 1;}
+}
+
+
+#visual_sub .text_box hr {width: 200px; height: 5px; background: #ffdec5; animation: subbar 1s forwards; animation-delay: .9s; opacity: 0; position: absolute; top:110px; border: 0; transform: translateX(-50%);}
+@keyframes subbar {
+    0% {width: 0;opacity: 0; left: 100%; ;}
+    100% {width: 200px;opacity: 1; left: 50%;  }
+}
+
+
+.snb_box {width: 820px; height: 50px; border-radius: 10px; background: #395f89; margin: 0 auto; position: relative; top: -25px; box-shadow: 0 0 24px rgba(0, 0, 0, 0.07);}
+.snb_box ul {text-align: center; font-size: 0;}
+.snb_box ul li {display: inline-block; font-size: 20px; height: 50px; line-height: 50px; }
+.snb_box ul li a {color: #fff; display: block; padding: 0 25px;}
+.snb_box ul li:hover a,
+.snb_box ul li.on a {color: #fedec5; }
+
+
+.contents_box {width: 1200px; margin: 0 auto; padding-bottom: 100px;}
+.contents_box:after {content: ''; display: block; clear: both;}
+.contents_box h3 {width: 640px; height: 100px; font-size: 36px; line-height: 60px; text-align: center; border-bottom: 1px solid #8fc43d; margin: 50px auto 70px auto; font-weight: normal;}
+.contents_box h3 span {display: block; font-size: 18px; color: #777; line-height: 20px;}
+
+
+/*인사말*/
+.greeting .ceo {width: 385px; height: 425px; float: left; margin-left: 50px; }
+.greeting .article {width: 680px;height: auto; float: left; margin-left: 34px;}
+
+.greeting .article em {font-size: 36px; color: #289669; font-style: normal; position: relative;}
+.greeting .article em img {position: absolute; left: -30px;}
+.greeting .article em span {color: #f2ac8d;}
+.greeting .article p {font-size: 18px; margin-top: 40px; line-height: 30px; }
+
+
+
+
+
+
+@media screen and (max-width:1560px) {    
+    #header h1 {margin-left: 30px;}
+    #header .gnb > li > a {padding: 0 20px; }
+    #header .hambuger {margin-right: 30px; }
+}
+
+

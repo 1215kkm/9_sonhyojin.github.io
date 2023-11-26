@@ -1,0 +1,709 @@
+@import url(reset.css);
+@import url(font.css);
+
+/*pc*/
+/* @import url('best_pc.css'); */
+/*tablet*/
+/* @import url('best_tablet.css') screen and (max-width:1200px); */
+/*mobile*/
+/* @import url('best_mobile.css') screen and (max-width:768px); */
+
+
+/* body {font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; background: #f9f9f9;} */
+
+body {font-family: 'SBAggroM';}
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2 {font-size: 50px; text-align: center; color: #fff; text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3); position: absolute; left: 50%; top: 140px; transform: translateX(-50%); line-height: 55px;}
+h2 span {font-size: 30px; color: #79e6fa; display: block; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);}
+
+
+.section1 {width: 1920px; height: 970px; background: #fff; margin: 0 auto; position: relative;}
+.section1 video {width: 100%;}
+.section1 .video_text {position: absolute; top: 150px; left: 250px; z-index: 10; font-size: 130px; color: #fff; }
+.section1 .video_text em {font-style: normal; font-size: 110px; margin-top: 50px;}
+
+
+
+
+
+
+/* section2 자기소개 페이지 */
+.section2 {width: 1920px; height: 970px; background: url('../images/bg_second.png') no-repeat; background-size: cover; margin: 0 auto;  position: relative; overflow: hidden;}
+
+
+
+
+
+
+
+
+
+.section2 .cloud {width: 1520px; height: 700px; position: relative; left: 50%; top: 243px; transform: translate(-50%);}
+.section2 .cloud .center {position: absolute; transform: scale(0.7); top: -90px; left: 250px; opacity: 0;}
+
+.section2.action .cloud .center {animation: cloud_center 2s forwards;}
+@keyframes cloud_center {
+    0% {transform: scale(0); opacity: 1;}
+    10% {transform: scale(0.7); opacity: 1;}
+    20% {transform: scale(0.7); opacity: 1;}
+    30% {transform: scale(0.7); opacity: 1;}
+    40% {transform: scale(0.7); opacity: 1;}
+    94% {transform: scale(0.7); opacity: 1;}
+    100% {transform: scale(1); opacity: 0;}
+}
+
+
+.section2 .cloud_1 {position: absolute; transform: scale(0.8); left: 90px; top: -50px; opacity: 0;}
+.section2.action .cloud_1 {animation: cloud_1 1.5s forwards; }
+    
+@keyframes cloud_1 {
+    0% {transform: scale(0); opacity: 0; left: 50%; top: 50%;}
+    10% {transform: scale(0.2);}
+    20% {transform: scale(0.8); left: 90px; top: -50px; opacity: 1;}
+    
+    30% {opacity: 1;}
+    40% {opacity: 1;}
+    50% {opacity: 1;}
+    60% {opacity: 1;}
+    70% {transform: scale(0.8); opacity: 1;}
+    80% {transform: scale(1); opacity: 0;}
+    90% {opacity: 0;}
+
+    100% {opacity: 0;}
+}
+.section2 .cloud_2 {position: absolute; left: -40px; top: 100px; transform: scale(0.8); opacity: 0;}
+
+.section2.action .cloud_2{animation: cloud_2 1.5s forwards; animation-delay: .1s;}
+@keyframes cloud_2 {
+    0% {transform: scale(0); opacity: 0; left: 50%; top: 50%;}
+    10% {transform: scale(0.2);}
+    20% {transform: scale(0.8); left: -40px; top: 100px; opacity: 1;}
+    
+    30% {opacity: 1;}
+    40% {opacity: 1;}
+    50% {opacity: 1;}
+    60% {opacity: 1;}
+    70% {opacity: 1;}
+    80% {transform: scale(0.8); opacity: 1;}
+    85% {transform: scale(1); opacity: 0;}
+    92% {opacity: 0;}
+    
+    100% {opacity: 0;}
+}
+.section2 .cloud_3 {position: absolute; left: 300px; top: 450px; opacity: 0;}
+
+.section2.action .cloud_3 {animation: cloud_3 1.5s forwards; animation-delay: .3s;}
+@keyframes cloud_3 {
+    0% {transform: scale(0); opacity: 0; left: 50%; top: 50%;}
+    10% {transform: scale(0.2);}
+    20% {transform: scale(1); left: 300px; top: 450px; opacity: 1;}
+    
+    30% {opacity: 1;}
+    40% {opacity: 1;}
+    50% {opacity: 1;}
+    60% {opacity: 1;}
+    70% {opacity: 1;}
+    80% {transform: scale(1); opacity: 1;}
+    85% {transform: scale(1.2); opacity: 0;}
+    90% {opacity: 0;}
+    
+    100% {opacity: 0;}
+}
+.section2 .cloud_4 {position: absolute; right: 150px; top: 300px;  transform: scale(0.8); opacity: 0;}
+.section2.action .cloud_4 {animation: cloud_4 1.5s forwards; animation-delay: .4s;}
+@keyframes cloud_4 {
+    0% {transform: scale(0); opacity: 0; right: 50%; top: 50%;}
+    10% {transform: scale(0.2);}
+    20% {transform: scale(0.8); right: 150px; top: 300px; opacity: 1;}
+    
+    30% {opacity: 1;}
+    40% {opacity: 1;}
+    50% {opacity: 1;}
+    60% {opacity: 1;}
+    70% {opacity: 1;}
+    80% {opacity: 1;}
+    85% {transform: scale(0.8); opacity: 1;}
+    90% {transform: scale(1); opacity: 0;}
+    95% {opacity: 0;}
+    
+    100% {opacity: 0;}
+}
+.section2 .cloud_5 {position: absolute; right: -200px; top: -30px;  transform: scale(0.8); opacity: 0;}
+
+.section2.action .cloud_5 {animation: cloud_5 1.5s forwards; animation-delay: .5s;}
+@keyframes cloud_5 {
+    0% {transform: scale(0); opacity: 0; right: 50%; top: 50%;}
+    10% {transform: scale(0.2);}
+    20% {transform: scale(0.8); right: -200px; top: -30px; opacity: 1;}
+    
+    30% {opacity: 1;}
+    40% {opacity: 1;}
+    50% {opacity: 1;}
+    60% {opacity: 1;}
+    70% {opacity: 1;}
+    80% {opacity: 1;}
+    90% {opacity: 1;}
+    95% {transform: scale(0.8); opacity: 1;}
+    
+    100% {transform: scale(1); opacity: 0;}
+}
+
+
+
+/* 스킬! 구름 뒤에 나오는 것들 */
+.section2 .skill {width: 1250px; height: 700px; position: absolute; top: 160px; left: 50%; transform: translateX(-50%); z-index: 10;}
+
+/* 스킬제목 */
+.section2 .skill h3 {color: #fff; font-size: 20px; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 2px 2px 0px #e55026;}
+
+/* 스킬 제목, 동그라미, 아이콘 포함 */
+.section2 .skill .skill_1 {width: 170px; height: 180px; position: absolute; left: 185px; top: 5px; text-align: center; opacity: 0; transition: .3s;}
+
+/* 액션될 때 */
+.section2.action .skill .skill_1 {animation: skill_1 1s forwards; opacity: 0; animation-delay: 1.9s;} 
+@keyframes skill_1 {
+    0% {opacity: 0; top: 185px;}
+    100% {opacity: 1; top: 5px;}
+}
+/* 스킬 동그라미 */
+.section2 .skill_1 .circle {width: 135px; height: 135px; margin-top: 15px; border-radius: 50%;}
+/* 스킬 아이콘 */
+.section2 .skill_1 .icon {position: absolute; top: 70px; left: 53px;}
+/* 스킬에 호버하면 */
+.section2 .skill .skill_1:hover .circle {box-shadow: 0 0 20px rgba(21,230,255,1); opacity: 0.85; transform: scale(1.1);}
+.section2 .skill .skill_1:hover .icon {transform: scale(1.1); }
+
+
+
+
+/* 스킬2 */
+.section2 .skill .skill_2 {width: 170px; height: 180px; position: absolute; left: -10px; top: 300px; text-align: center; opacity: 0; transition: .3s;}
+.section2.action .skill .skill_2 {animation: skill_2 1s forwards; opacity: 0; animation-delay: 1.9s;}
+    @keyframes skill_2 {
+        0% {opacity: 0; top: 480px;}
+        100% {opacity: 1; top: 300px;}
+    } 
+.section2 .skill_2 h3 {text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 2px 2px 0px #0c73b8;}
+.section2 .skill_2 .circle {width: 130px; margin-top: 15px; border-radius: 50%;}
+.section2 .skill .skill_2:hover .circle {box-shadow: 0 0 20px rgba(21,230,255,1);}
+.section2 .skill_2 .icon {position: absolute; top: 68px; left: 53px;}
+.section2 .skill .skill_2:hover .circle {box-shadow: 0 0 20px rgba(21,230,255,1); opacity: 0.85; transform: scale(1.1);}
+.section2 .skill .skill_2:hover .icon {transform: scale(1.1); }
+
+
+
+
+
+/* 스킬3 */
+.section2 .skill .skill_3 {width: 250px; height: 170px; position: absolute; left: 120px; bottom: 25px; text-align: center; opacity: 0; transition: .3s;}
+
+.section2.action .skill .skill_3 {animation: skill_3 1s forwards; opacity: 0; animation-delay: 1.9s;}
+    @keyframes skill_3 {
+        0% {opacity: 0; bottom: 195px;}
+        100% {opacity: 1; bottom: 25px;}
+    } 
+.section2 .skill .skill_3 h3 {position: absolute; top: 30px; left: 10px; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 2px 2px 0px #e6a128;}
+.section2 .skill_3 .circle {width: 135px; position: absolute; left: 100px; bottom: -20px; border-radius: 50%;}
+.section2 .skill_3 .icon {position: absolute; top: 90px; left: 135px;}
+.section2 .skill .skill_3:hover .circle {box-shadow: 0 0 20px rgba(21,230,255,1); opacity: 0.85; transform: scale(1.1);}
+.section2 .skill .skill_3:hover .icon {transform: scale(1.1); }
+
+
+
+
+/* 스킬4 */
+.section2 .skill .skill_4 {width: 170px; height: 180px; position: absolute; right: 280px; bottom: 50px; text-align: center; opacity: 0; transition: .3s;}
+
+.section2.action .skill .skill_4 {animation: skill_4 1s forwards; opacity: 0; animation-delay: 1.9s;} 
+    @keyframes skill_4 {
+        0% {opacity: 0; bottom: 185px;}
+        100% {opacity: 1; bottom: 50px;}
+    }
+.section2 .skill .skill_4 h3 {position: absolute; left: -70px; top: 170px; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 2px 2px 0px #ff62f9;}
+.section2 .skill .skill_4 span{color: #fff; font-size: 20px; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 2px 2px 0px #a259ff; position: absolute; top: 50px; right: -80px;}
+.section2 .skill_4 .circle {width: 160px; position: absolute; top: 40px; left: 10px; border-radius: 50%;}
+.section2 .skill_4 .icon {position: absolute; top: 80px; left: 40px;}
+.section2 .skill .skill_4:hover .circle {box-shadow: 0 0 20px rgba(21,230,255,1); opacity: 0.85; transform: scale(1.1);}
+.section2 .skill .skill_4:hover .icon {transform: scale(1.1); }
+
+
+
+
+/* 스킬5 */
+.section2 .skill .skill_5 {width: 170px; height: 180px; position: absolute; right: 145px; top: 150px; text-align: center; opacity: 0; transition: .3s;}
+    
+.section2.action .skill .skill_5 {animation: skill_5 1s forwards; opacity: 0; animation-delay: 1.9s;}
+    @keyframes skill_5 {
+        0% {opacity: 0; top: 330px;}
+        100% {opacity: 1; top: 150px;}
+    }
+.section2 .skill .skill_5 h3 {position: absolute; top: 150px; right: -130px; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3),2px 2px 0px #001834;}
+.section2 .skill .skill_5 span{color: #fff; font-size: 20px; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 2px 2px 0px #ff9b00; position: absolute; top: -10px; right: 165px;} 
+.section2 .skill_5 .circle {width: 168px; margin-top: 15px; border-radius: 50%;}
+.section2 .skill_5 .icon {position: absolute; top: 60px; left: 30px;}
+.section2 .skill .skill_5:hover .circle {box-shadow: 0 0 20px rgba(21,230,255,1); opacity: 0.85; transform: scale(1.1);}
+.section2 .skill .skill_5:hover .icon {transform: scale(1.1); }
+
+
+/* profile */
+.section2 .profile {width: 840px; height: 400px; position: absolute; left: 50%; top: 650px; transform: translateX(-55%);overflow: hidden; opacity: 0; z-index: 10;}
+     
+.section2.action .profile {animation: profile 1s forwards; animation-delay: 2s; }
+@keyframes profile {
+    0% {top: 600px; opacity: 0;}
+    100% {top: 314px; opacity: 1;}
+}
+
+.section2 .profile .photo {width: 30%; float: left;  height: 100%; text-align: center; padding-top: 80px; box-sizing: border-box; }
+.section2 .profile .photo p {color: #555; position: absolute; top: 180px; left: 100px; font-size: 15px; width: 90px;}
+.section2 .profile .photo img {width: 168px;}
+
+.section2 .profile .cont { float: left; width: 70%; height: 100%; text-align: left; padding-top: 30px; box-sizing: border-box;}
+.section2 .profile .cont li {font-size: 18px; color: #fff; text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3); font-weight: normal; height: 30px; line-height: 30px;}
+.section2 .profile .cont li.indent {text-indent: 85px;}
+.section2 .profile .cont li.indent2 {text-indent: 123px;}
+.section2 .profile .cont li:last-child {margin-top: 40px; font-weight: normal;}
+.section2 .profile .cont li:hover {color: #fcfa55;}
+
+
+/* 글씨가 잘 안보여서 배경에 navy넣음 */
+.section2 .bg_navy {position: absolute; left: 0; top: 0; opacity: 0;}
+    
+.section2.action .bg_navy {animation: bg_navy 1s forwards; animation-delay: 2s;}
+    @keyframes bg_navy {
+        0% {opacity: 0;}
+        90% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+.section2 .bg_navy img {width: 1920px;}
+
+
+
+.section2 .cloud_bg {position: absolute; left: 0; top: 0;}
+
+
+
+
+
+
+
+
+
+/* section3 반응형 홈페이지 디자인 */
+.section3 {width: 1920px; height: 970px; background: url('../images/bg_third.png') no-repeat; background-size: cover; margin: 0 auto;  position: relative; overflow: hidden;}
+
+
+/* 처음에 보이는 pc화면 */
+.section3 .front_page {position: absolute; left: 50%; top: 200px; transform: translateX(-50%);}
+
+.section3.action .front_page {animation: frontpage 2s forwards;} 
+@keyframes frontpage {
+    0% {opacity: 1; top: -200px;}
+    50% {opacity: 1; top: 200px;}
+    90% {opacity: 1;}
+    100% {opacity: 0; top: 200px;}
+}
+.section3 .front_page img {width: 1000px;}
+
+
+/* 비행기 */
+.section3 .airplane {position: absolute; left: 0; top: 200px; }
+.section3.action .airplane {animation: airplane 3s forwards; animation-delay: 1s;}
+@keyframes airplane {
+    0% {left: 0px;}
+    100% {left: 200vw;}
+}
+/* 비행기 연기 */
+.section3 .airplane .contrail {position: absolute; left: -3000px; top: 50%; transform: translateY(-50%); }
+.section3.action .airplane .contrail {animation: contrail 4s forwards; animation-delay: 1.5s;}
+@keyframes contrail {
+    0% {opacity: 1;}
+    100% {opacity: 0; left: 1920px;}
+}
+
+
+/* pc tablet mobile */
+.section3 .active_page {width: 1330px; height: 600px; position: absolute; left: 50%; bottom: 170px; transform: translateX(-50%); }
+
+.section3 .active_page figure {width: 100px; height: 100px; position: absolute; top: 90px; left: 42%; opacity: 0;}
+.section3.action .active_page figure {animation: click 2s infinite; animation-delay: 3s;}
+@keyframes click {
+    0% {opacity: 0;}
+    50% {opacity: 0.8;}
+    100% {opacity: 0;}
+}
+.section3 .active_page figure img:first-child {transform: rotate(0) scale(1.8); position: absolute; left: 100px;}
+.section3 .active_page figure img {width: 70px; transform: rotate(20deg);}
+
+
+
+.section3 .active_page h3 {color: #fff; font-size: 20px; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); position: absolute; left: 50%; transform: translateX(-50%);}
+
+
+/* PC화면 */
+.section3 .active_page .pc {position: absolute; bottom: 0; left: 5px; opacity: 0; cursor: pointer;}
+.section3.action .active_page .pc {animation: pc 1s forwards; animation-delay: 2s;}
+@keyframes pc {
+    0% {opacity: 0; bottom: 100px;}
+    100% {opacity: 1; bottom: 0;}
+}
+.section3 .active_page .pc h3 {top: -40px;}
+.section3 .active_page .pc img {width: 537px;}
+
+.section3 .active_page .pc .showpage {position: absolute; left: 50%; top: 14px; transform: translateX(-50%); background: #000; width: 510px; height: 287px;}
+
+.section3 .active_page .pc .showpage img {width: 510px;}
+
+
+.section3 .active_page .showpage em {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-60%); text-align: center; color: #fff; font-style: normal; font-size: 30px; display: none; font-weight: bold;}
+.section3 .active_page .showpage p {position: absolute; left: 50%; top: 160px; transform: translateX(-50%); text-align: center; color: #aaa; font-size: 15px; display: none; font-weight: normal;}
+.section3 .active_page .showpage:hover img {opacity: 0.3;}
+
+.section3 .active_page .showpage:hover em {display: block;}
+.section3 .active_page .showpage:hover p {display: block;}
+
+.section3 .active_page .tablet .showpage p {top: 180px;}
+
+.section3 .active_page .mobile .showpage em {font-size: 18px; top: 45%;}
+.section3 .active_page .mobile .showpage p {top: 200px;}
+
+
+
+
+/* Tablet화면 */
+.section3 .active_page .tablet {position: absolute; bottom: 0px; left: 550px ; opacity: 0; cursor: pointer;}
+.section3.action .active_page .tablet {animation: tablet 1s forwards; animation-delay: 2.3s;}
+    @keyframes tablet {
+        0% {opacity: 0; bottom: 100px;}
+        100% {opacity: 1; bottom: 0px;}
+    }
+.section3 .active_page .tablet h3 {top: -40px; }
+.section3 .active_page .tablet img {width: 517px;}
+
+.section3 .active_page .tablet .showpage {position: absolute; left: 50%; top: 19px; transform: translateX(-50%); background: #000; width: 431px; height: 323px;}
+.section3 .active_page .tablet .showpage img {width: 431px;}
+
+
+
+/* Mobile화면 */
+.section3 .active_page .mobile {position: absolute; bottom: 0; right: 50px;
+opacity: 0; cursor: pointer;}
+.section3.action .active_page .mobile {animation: mobile 1s forwards; animation-delay: 2.6s;}
+
+    @keyframes mobile {
+        0% {opacity: 0; bottom: 100px;}
+        100% {opacity: 1; bottom: 0px;}
+    }
+.section3 .active_page .mobile h3 {top: -35px;}
+.section3 .active_page .mobile img {width: 208px;}
+
+.section3 .active_page .mobile .showpage {position: absolute; left: 50%; top: 9px; transform: translateX(-50%); background: #000; width: 186px; height: 402px; border-radius: 20px;}
+.section3 .active_page .mobile .showpage img {width: 186px;}
+
+
+
+/* 구름두개둥실둥실 */
+.section3 .bg_two_cloud {position: absolute; left: 0; top: 0; }
+.section3.action .bg_two_cloud {animation: bg_two_cloud 2s infinite;}
+@keyframes bg_two_cloud {
+    0% {top: 0}
+    50% {top: -10px;}
+    100% {top: 0;}
+}
+
+
+
+
+
+
+/* 확대됐을때 pc화면 */
+.section3 .big_page .pc_big {display: none;}
+.section3 .big_page em {font-style: normal; font-size: 20px; position: absolute; left: 50%; top: 120px; transform: translateX(-50%); font-weight: bold; color: #0477b8; text-shadow: 1px 1px 3px rgb(255, 255, 255, 0.3); text-align: center;}
+.section3 .big_page em span {font-size: 14px; color: #dedede; font-weight: normal; text-shadow: none; display: block; margin-top: 5px;}
+.section3 .big_page .pc_big .pc_img {width: 600px; height: 650px; position: absolute; left: 50%; transform: translateX(-50%); top: 180px; overflow-y: scroll; overflow-x: hidden;}
+.section3 .big_page .pc_big .pc_img::-webkit-scrollbar {display: none;}
+.section3 .big_page .pc_big .pc_img img {width: 600px;}
+
+/* 왼쪽 큰말풍선*/
+.section3 .big_page .pc_big .talk {position: absolute; left: 50%; top: 300px; transform: translateX(-750px);}
+.section3 .big_page .pc_big .talk p {position: absolute; left: 0; top: 0; padding: 25px 20px 20px 20px; font-weight: normal; color: #555; font-size: 15px; line-height: 22px; border: 1px solid #000;} 
+.section3 .big_page .pc_big .talk p span {display: block; font-size: 18px; color: #333; }
+/* 오른쪽 작은말풍선 */
+.section3 .big_page .pc_big .talk_small {position: absolute; left: 50%; top: 400px; transform: translateX(330px); }
+.section3 .big_page .pc_big .talk_small p {position: absolute; left: 0; top: 0; padding: 20px 20px 20px 20px; font-weight: normal; color: #555; font-size: 15px; line-height: 22px;}
+
+
+
+
+
+/* 확대됐을때 tablet 화면 */
+.section3 .big_page .tablet_big {display: none;}
+.section3 .big_page .tablet_big em {top: 160px;}
+.section3 .big_page .tablet_big em span {top: 180px;}
+
+.section3 .big_page .tablet_big .tablet_img {width: 500px; height: 600px; position: absolute; left: 50%; transform: translateX(-50%); top: 220px; overflow-y: scroll; overflow-x: hidden;}
+.section3 .big_page .tablet_big .tablet_img:hover {cursor: pointer;}
+.section3 .big_page .tablet_big .tablet_img::-webkit-scrollbar {display: none;}
+.section3 .big_page .tablet_big .tablet_img img {width: 500px;}
+/* 왼쪽 큰말풍선*/
+.section3 .big_page .tablet_big .talk {position: absolute; left: 50%; top: 300px; transform: translateX(-700px);}
+.section3 .big_page .tablet_big .talk p {position: absolute; left: 0; top: 0; padding: 25px 20px 20px 20px; font-weight: normal; color: #555; font-size: 15px; line-height: 22px;} 
+/* 오른쪽 작은말풍선 */
+.section3 .big_page .tablet_big .talk_small {position: absolute; left: 50%; top: 400px; transform: translateX(290px); }
+.section3 .big_page .tablet_big .talk_small p {position: absolute; left: 0; top: 0; padding: 20px 20px 20px 20px; font-weight: normal; color: #555; font-size: 15px; line-height: 22px;}
+
+
+
+
+/* 확대됐을때 mobile 화면 */
+.section3 .big_page .mobile_big {display: none;}
+.section3 .big_page .mobile_big em {top: 140px;}
+.section3 .big_page .mobile_big em span {top: 160px;}
+.section3 .big_page .mobile_big .mobile_img {width: 400px; height: 600px; position: absolute; left: 50%; transform: translateX(-50%); top: 200px; overflow-y: scroll; overflow-x: hidden;}
+.section3 .big_page .mobile_big .mobile_img:hover {cursor: pointer;}
+.section3 .big_page .mobile_big .mobile_img::-webkit-scrollbar {display: none;}
+.section3 .big_page .mobile_big .mobile_img img {width: 400px;}
+
+.section3 .big_page .mobile_big .talk {position: absolute; left: 50%; top: 350px; transform: translateX(-650px);}
+.section3 .big_page .mobile_big .talk p {position: absolute; left: 0; top: 0; padding: 25px 20px 20px 20px; font-weight: normal; color: #555; font-size: 15px; line-height: 22px;} 
+/* 오른쪽 작은말풍선 */
+.section3 .big_page .mobile_big .talk_small {position: absolute; left: 50%; top: 450px; transform: translateX(230px); }
+.section3 .big_page .mobile_big .talk_small p {position: absolute; left: 0; top: 0; padding: 20px 20px 20px 20px; font-weight: normal; color: #555; font-size: 15px; line-height: 22px;}
+
+
+
+
+
+/* 닫기버튼 */
+.section3 .big_page button {width: 80px; height: 80px; position: absolute; right: 400px; top: 50px; background: none; cursor: pointer;}
+.section3 .big_page button:before,
+.section3 .big_page button:after
+ {content: ''; width: 80px; height: 2px; background: #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%) rotate(45deg); box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);}
+.section3 .big_page button:after {transform: translate(-50%,-50%) rotate(-45deg);}
+
+
+
+/* section4 홈페이지디자인 슬라이드 */
+.section4 {width: 1920px; height: 970px; background: url('../images/bg_fourth.png') no-repeat; background-size: cover; margin: 0 auto; position: relative;}
+
+/* 스크롤 아이콘 */
+.section4 figure {width: 150px; height: 300px; position: absolute; left: 150px; top: 150px; opacity: 1; animation: scroll4 2s infinite;}
+@keyframes scroll4 {
+    0% {opacity: 0;}
+    50% {opacity: 0.8;}
+    100% {opacity: 0;}
+}
+.section4 figure img {height: 80px; position: absolute; top: 100px;}
+.section4 figure img.word {height: 50px; left: 10px; position: absolute; top: 40px;}
+
+
+
+/* section4  컴퓨터 화면 */
+
+.section4 .display {position: absolute; left: 5%; top: 215px; width: 50%;}
+.section4 .display img {width: 950px; border: 0;}
+
+
+/*section4 swiper*/
+.section4 .swiper_all {width: 1800px; height: 700px; position: absolute; left: 50%; transform: translateX(-50%); top: 250px;}
+.section4 .swiper {width: 100%; height: 100%; }
+.section4 .swiper-slide {text-align: center; font-size: 18px;
+
+/* Center slide text vertically */
+display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center;-ms-flex-align: center; -webkit-align-items: center; align-items: center; }
+.section4 .page_slide {height: 80%; width: 100%;}
+.section4 .page_slide .swiper_wrapper {width: 100%;}
+
+/* 크게보이는 이미지 */
+.section4 .swiper-slide .homepage_img {width: 598px; height: 336px; position: absolute; left: 212px; top: 54px;  background: #ddd; overflow-y: scroll; overflow-x: hidden;}
+.section4 .swiper-slide .homepage_img:hover {cursor: pointer;}
+.section4 .swiper-slide .homepage_img::-webkit-scrollbar {display: none;}
+.section4 .swiper-slide .homepage_img img {object-fit: cover; width: 598px;}
+
+.section4 .page_slide .swiper-slide .contents {width: 35%; height: 80%; position: absolute; right: 280px; top: 40px; font-size: 30px; color: #fff; text-align: left;}
+.section4 .page_slide .swiper-slide .contents p {line-height: 80px; font-size: 35px; font-weight: normal; text-shadow: 1px 1px 2px rgba(255,255,255,0.4); color: #0e44b1;}
+.section4 .page_slide .swiper-slide .contents em {font-weight: normal; font-style: normal; line-height: 35px; text-shadow: 1px 1px 2px rgba(0,0,255,0.4); font-size: 24px;}
+.section4 .page_slide .swiper-slide .contents span {color: #ddd; text-shadow: none; font-size: 18px; margin-top: 40px; display: block;}
+/* .section4 .swiper {width: 100%; height: 300px; margin-left: auto; margin-right: auto;}
+.section4 .swiper-slide {background-size: cover; background-position: center;} */
+/* 미리보기 이미지 */
+.section4 .page_slide_thumb {height: 10%; box-sizing: border-box; width: 55%; margin-top: 10px;}
+.section4 .page_slide_thumb .swiper-slide {width: 50px; height: 100%; opacity: 1; box-sizing: border-box; cursor: pointer; box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);}
+.section4 .page_slide_thumb .swiper-slide img {width: 100%; }
+.section4 .page_slide_thumb .swiper-slide i {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-style: normal; text-align: center; font-size: 17px; color: rgb(0, 255, 221); width: 100%; text-shadow: 1px 1px 2px rgba(0,0,255,0.9);}
+
+.section4 .page_slide_thumb .swiper-slide:hover {opacity: 0.4;}
+/* .section4 .page_slide_thumb .swiper-slide:hover i {} */
+
+.section4 .page_slide_thumb .swiper-slide-thumb-active {opacity: 0.4; }
+.section4 .page_slide_thumb .swiper-slide-thumb-active i {opacity: 1;}
+/*큰이미지*/
+
+
+
+.section4 .swiper-button-next {margin-right: 150px; transform: scale(1.5);}
+.section4 .swiper-button-prev {margin-left: 50px; transform: scale(1.5);}
+
+
+
+
+
+
+/* 팝업 디자인 */
+.section5 {width: 1920px; height: 970px; background: url('../images/bg_fifth.png') no-repeat; background-size: cover; margin: 0 auto; position: relative;}
+
+.section5 figure {width: 100px; height: 100px; position: absolute; top: 200px; left: 15%; opacity: 0; 
+    animation: drag5 2s infinite;}
+.section5 figure img {height:80px;}
+@keyframes drag5 {
+    0% {opacity: 0;}
+    50% {opacity: 0.8;}
+    100% {opacity: 0;}
+}
+
+
+.section5 .swiper {width: 1600px; height: 500px; position: absolute; left: 50%; top: 300px; transform: translateX(-50%); box-sizing: border-box; padding-top: 13px;}
+
+.section5 .swiper-slide {background-position: center; background-size: cover; width: 400px; height: 400px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);}
+
+
+.section5 .swiper-slide img {display: block; width: 100%;}
+.section5 h4 {font-size: 25px; position: absolute; left: 50%; bottom: -50px; text-align: center; transform: translateX(-50%); font-weight: normal; color: #333; text-shadow: 1px 1px 2px rgb(255, 255, 255, 0.7);}
+
+
+/* 배너 디자인 */
+.section6 {width: 1920px; height: 970px; background: url('../images/bg_sixth.jpg') no-repeat; background-size: cover; margin: 0 auto; position: relative;}
+
+.section6 figure {width: 100px; height: 100px; position: absolute; top: 250px; left: 60%; opacity: 0; 
+    animation: drag 2s infinite;}
+.section6 figure img {height:80px;}
+@keyframes drag {
+    0% {opacity: 0;}
+    50% {opacity: 0.8;}
+    100% {opacity: 0;}
+}
+
+
+
+.section6 .swiper {width: 1600px; height: 400px; box-sizing: border-box; position: absolute; left: 50%; top: 400px; transform: translateX(-50%); }
+.section6 .swiper-slide {font-size: 18px; background: #000; 
+    height: 130px !important; 
+    width: 750px !important; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+
+
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+.section6 .swiper-slide h4 {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: #fff; font-size: 25px; font-weight: normal; display: none;}
+.section6 .swiper-slide img {width: 750px;}
+
+.section6 .blank {padding-top: 9px;}
+.section6 .blank:hover {overflow: hidden;}
+
+.section6 .smeg {height: 317px !important; background: none;}
+.section6 .smeg:hover {overflow: hidden;}
+.section6 .smeg:hover img {background: #000;}
+
+.section6 .toster img {}
+.section6 .swiper-slide:hover img {opacity: 0.4;}
+.section6 .swiper-slide:hover h4 {display: block;}
+
+
+
+
+/* 퀵메뉴 */
+.quick_menu {width: 95px; height: 600px;  position: absolute; top: 150vh; right: 70px; transform: translateY(-50%); background: url('../images/bg_quickmenu_06.png') center; z-index: 50; border-radius: 8px; box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);}
+
+.quick_menu .balloon {background: url('../images/airballoon_quickmenu_06.png'); width: 52px; height: 81px; position: absolute; right: -30px; top: 10px; transition: 1s; animation: ball 0.5s infinite alternate;}
+@keyframes ball {
+    0% {margin-top: 0;}
+    100% {margin-top: -10px;}
+}
+
+.quick_menu li {text-align: center; height: 119px; border-bottom: 1px solid rgba(255, 255, 255, 0.2); line-height: 119px; padding-bottom: 50px; padding-top: 40px; box-sizing: border-box;}
+.quick_menu li:first-child {padding-top: 50px;}
+.quick_menu li:last-child {border-bottom: 0;}
+.quick_menu li a {font-size: 16px; color: #fff; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); line-height: 22px; display: block;}
+
+.quick_menu li:hover a {color: #acf89b;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+******내가할문제*****
+
+
+
+
+
+
+-section3 -
+확대했을때 말풍선 채우기-80%
+-section4 -
+홈페이지 디자인 후기 채우기
+
+배경 옆에 채울건지 이어지게?
+- 팝업 8개 (아이디어스, 메이크프렘, 필리핀관광부, 5개더!, 토스터기)
+- 배너 8개 (필리핀관광부, 메이크프렘, 4개더!)
+
+fullpage는 한번 넣어보기- 포기..
+
+
+페이지 이동할때 열기구도 움직여야함...움직이는데 마지막 세션이 안됨..
+코딩 수정봐야할 페이지: 동수원병원-뉴스쪽 칸이 밀렸음 
+                        경기일자리재단-마지막섹션 글씨왜저래
+
+코딩 만들어야 하는 페이지: 시드물, 신한은행 랜딩페이지
+
+
+선생님께 컨펌
+랜딩페이지
+아이디어스 팝업, 배너
+메이크프렘 팝업, 배너
+필리핀관광부 팝업, 배너
+
+
+*/

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>재활요양병원</title>
+    <link rel="stylesheet" href="css/style.css?v=0.1">
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+</head>
+<body>
+    <div class="sidebox">
+        <div class="sidemenu">
+            <span class="btn_close"></span>
+
+
+            <div class="gnb2">
+            </div>
+
+
+            <div class="member_box">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div id="header">
+        <h1><a href="#"><img src="images/logo.png" alt="logo"></a></h1>
+
+        <div class="hambuger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <div class="phone mo">
+            <a href="tel:01033217317"><i class="fas fa-phone"></i></a>
+        </div>
+        
+
+        <ul class="gnb">
+            <li><a href="sub01_01.html">병원소개</a>
+                <ul class="lnb lnb1">
+                    <li><a href="sub01_01.html">병원소개</a></li>
+                    <li><a href="#">의료진소개</a></li>
+                    <li><a href="#">병원둘러보기</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                </ul>
+            </li>
+            <li><a href="#">이용안내</a>
+                <ul class="lnb lnb2">
+                    <li><a href="#">진료안내</a></li>
+                    <li><a href="#">입퇴원안내</a></li>
+                    <li><a href="#">입원시준비사항</a></li>
+                    <li><a href="#">층별안내</a></li>
+                    <li><a href="#">비급여안내</a></li>
+                </ul>
+            </li>
+            <li><a href="#">재활센터</a>
+                <ul class="lnb lnb3">
+                    <li><a href="#">재활센터</a></li>
+                </ul>
+            </li>
+            <li><a href="#">클리닉센터</a>
+                <ul class="lnb lnb4">
+                    <li><a href="#">치매</a></li>
+                    <li><a href="#">뇌졸증</a></li>
+                    <li><a href="#">만성질환</a></li>
+                    <li><a href="#">퇴행성질환</a></li>
+                    <li><a href="#">통증</a></li>
+                    <li><a href="#">한의약</a></li>
+                </ul>
+            </li>
+            <li><a href="#">온라인문의</a>
+                <ul class="lnb lnb5">
+                    <li><a href="#">온라인문의</a></li>
+                    <li><a href="#">자주묻는질문</a></li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <div class="lnb_bg"></div>
+    </div>
+
+
+    <div id="visual_sub">
+        <div class="building"></div>
+
+        <div class="text_box">
+            <strong>
+                <span><em>BEST AHN</em></span>
+                <span>REHABILITATION</span>
+                <span>HOSPITAL</span>
+            </strong>
+            <hr>
+        </div>
+    </div>
+
+
+    <div id="section_sub">
+        <div class="snb_box">
+            <ul class="snb">
+                <li><a href="sub01_01.html">병원소개</a></li>
+                <li><a href="sub01_02.html">의료진소개</a></li>
+                <li><a href="sub01_03.html">병원둘러보기</a></li>
+                <li><a href="sub01_04.html">찾아오시는길</a></li>
+            </ul>
+        </div>
+
+        <div class="contents_box greeting">
+            <h3>병원소개<span>베스트안병원을 소개합니다.</span></h3>
+            <div class="ceo">
+                <img src="images/img_ceo.jpg" alt="병원장">
+            </div>
+
+            <div class="article">
+                <em><img src="images/img_ddaom.jpg" alt="">한결같은 <span>마음</span>으로<br> 편안함을 주는 병원</em>
+                <p>안녕하십니까?
+                쾌적한 환경 명품 신도시 흥덕지구 중심에 자리 잡고 있는 베스트안재활요양병원입니다.
+                환자의 건강은 물론, 은빛 삶을 풍요롭게 해드릴 수 있는 병원.
+                가족들에게는 부모님을 내 집과 같은 곳에 모셨다는 편안함을 주는 병원을 꿈꾸면서 
+                이곳에 뿌리를 내리게 되었습니다.</p>
+                <p>
+                유능한 전문의들로 구성된 의료진, 사회복귀를 위한 전문 재활치료 프로그램, 상태에 따른 
+                적절한 치료를 위한 양한방 협진, 정신재활을 위한 사회복지 프로그램, 24시간 간병서비스 등 
+                환자를 위한 환경을 제공하기 위해 노력하고 있습니다.
+                한결같은 마음으로 끊임없이 노력하면서 이 지역 최고의 병원으로 거듭나겠습니다.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer"></div>
+    
+
+
+
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
+    <script src="script/motion.js"></script>
+
+    <script>
+        $('.pop').draggable({
+            scroll : false,
+		    containment : 'parent'
+        });
+        $('.pop').mousedown(function(){
+            $(this).stop().animate({opacity:0.5},100);
+        })
+        .mouseup(function(){
+            $(this).stop().animate({opacity:1},200);
+        })
+    </script>
+</body>
+</html>

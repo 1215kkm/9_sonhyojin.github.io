@@ -1,0 +1,12 @@
+@import url(reset.css);
+@import url(font.css);
+
+/*pc*/
+@import url('best_pc.css');
+/*tablet*/
+@import url('best_tablet.css') screen and (max-width:1200px);
+/*mobile*/
+@import url('best_mobile.css') screen and (max-width:768px);
+
+
+body {font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; background: #f9f9f9;}

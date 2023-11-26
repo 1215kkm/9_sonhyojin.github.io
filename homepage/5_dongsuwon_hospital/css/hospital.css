@@ -1,0 +1,201 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url(font.css);
+
+.center_1400 {width: 1400px; margin: 0 auto;}
+.center_1200 {width: 1200px; margin: 0 auto;}
+
+body{font-family: '나눔바른고딕'; font-weight: 400; }
+
+#header {width: 100%; height: 132px; background: url('../images/bg_header.jpg') 0 46px repeat-x; border-bottom: 1px solid #dcdcdc; }
+#header .topmenu {width: 440px; height: 46px; float: right; text-align: right; font-size: 0;}
+#header .topmenu a {display: inline-block; height: 46px; line-height: 46px; font-size: 15px; color: #333; padding: 0 17px;}
+#header .topmenu a:hover {text-decoration: underline;text-underline-position: under;}
+#header .topmenu a:before {content: ""; position: absolute; width: 2px; height: 2px; background: #777; top: 22px; left: 5px;}
+
+#header .topmenu a.call {color: #218dff;}
+
+#header .topset {width: 100%; height: 83px; float: left;}
+#header .topset h1 {width: 190px; height: 66px; float: left; margin-left: 7px; margin-top: 15px;}
+#header .topset .gnb {width: 730px; height: 83px; float: left; margin-left: 140px;}
+#header .topset .gnb > li {height: 83px; line-height: 83px; font-size: 18px; color: #333; position: relative; float: left;}
+#header .topset .gnb > li > a {padding: 8px 29px; border-radius: 0 8px;}
+#header .topset .gnb > li:hover > a {background: #978676; color: #fff;}
+
+.gnb .lnb {position: absolute; width: 100%; display: none; z-index: 3; padding-top: 24px;}
+.gnb:hover .lnb {display: block;}
+
+.gnb .lnb li {height: 50px; line-height: 50px; font-size: 17px; text-align: center;}
+.gnb .lnb li a {padding: 8px 20px; border-radius: 0 8px; background: transparent; transition: .13s;}
+.gnb .lnb li:hover a {background: #978676; color: #fff;}
+
+.bg_lnb {width: 100%; height: 275px; background: rgba(255,255,255,0.95); position: absolute; left: 0; top: 132px; opacity: 0; visibility: hidden; transition: .13s; z-index: 2;}
+
+.gnb:hover ~ .bg_lnb {opacity: 1; visibility: visible;}
+
+
+#header .topset .btn_box {width: 330px; height: 42px; float: right; margin-top: 30px;}
+#header .topset .btn_box a {padding: 12px 18px; background: #a7987c; color: #fff; font-size: 18px; border-radius: 8px;}
+#header .topset .btn_box a:last-child {background: #4f8c6a;}
+
+
+
+
+
+/* 비주얼메인 */
+#visual_main {width: 100%; height: 719px; background: url('../images/visual_main.jpg') center top; position: relative; background-size: cover;}
+#visual_main .textbox1 {position: absolute; width: 650px;height: 300px; left: 50%; top: 200px; margin-left: -670px;}
+.textbox1 p {font-size: 57px; line-height: 70px; color: #fff; text-align-last: left; letter-spacing: -0.1em; word-break: keep-all; margin-bottom: 42px;}
+.textbox1 div a {display: inline-block; width: 148px; height: 48px; line-height: 48px; background: #b17851; font-size: 16px; color: #fff; text-align: center; border-radius: 0 8px; border: 2px solid #fff; }
+.textbox1 div a:last-child {background: #a98c77;}
+
+
+
+#sectionbox h2 {font-size: 26px; font-weight: normal;}
+#sectionbox h3 {font-size: 22px; font-weight: normal;}
+
+
+/* 바로가기 */
+#section01 {width: 100%; height: 520px;}
+#section01 ul {margin-top: 89px; float: left; }
+#section01 .second {margin-top: 0;}
+#section01 li {width: 300px; height: 150px; float: left; text-align: center; background: #978676; border-radius: 0 0 15px 15px;}
+#section01 li.color_diff {background: #aca196;}
+#section01 li.second_line {border-radius: 15px 15px 0 0;}
+#section01 div {margin-top: 32px;  height: 65px;}
+#section01 h3 {color: #fff; margin-top: 10px;}
+
+
+
+/* 동수원병원뉴스 */
+#section02 {width: 100%; height: 879px; background: #f8f8f8; padding-top: 51px; box-sizing: border-box;}
+#section02 .news h2 {color: #777; text-align: center; font-size: 26px; font-weight: bold; line-height: 19px; padding-top: 34px; padding-bottom: 55px;}
+
+#section02 .news {width: 100%; height: 442px;}
+/* #section02 .news h2 {height: 30px; position: absolute; top: -80px; right: 50%; margin-right: 170px; font-weight: normal;} */
+
+#section02 .news .main_board {float: left;}
+#section02 .news .main_board .thumbnail {width: 582px; height: 379px; float: left;}
+#section02 .news .main_board .thumbnail img {width: 582px; height: 379px; } 
+#section02 .news .main_board .title {width: 270px; top: 28px; margin-bottom: 26px; color: #555; font-size: 22px; line-height: 22px;  font-weight: bold; padding-top: 400px;}
+.news .main_board .content {width: 582px; height: 60px; color: #555; }
+
+.news .main_board .more {width: 55px; height: 22px; line-height: 22px; border-radius: 5px; text-align: center; color: #fff; padding: 1px 5px 5px 5px; background: #988776; margin-top: 55px; font-weight: normal;}
+.news .main_board .more a {color: #fff;}
+
+#section02 .news .sub_board {float: left; margin-left: 34px; width: 582px; height: 556px;}
+#section02 .news .sub_board .thumbnail {width: 245px; height: 159px; float: right; margin-left: 76px; margin-top: 0;}
+#section02 .news .sub_board .thumbnail img {width: 245px; height: 159px; float: right; margin-left: 76px; margin-top: 0;}
+#section02 .news .sub_board .title {width: 174px; height: 26px; top: 28px; margin-bottom: 19px; color: #555; font-size: 22px; line-height: 22px; word-break: normal; font-weight: bold; margin-top: 22px; }
+#section02 .news .sub_board .content {width: 270px; height: 30px; color: #555; margin-bottom: 26px;}
+.news .sub_board .more {width: 55px; height: 22px; line-height: 22px; border-radius: 5px; text-align: center; color: #fff; padding: 1px 5px 5px 5px; background: #988776; font-weight: normal; margin-bottom: 10px;margin-top: 46px;}
+.news .sub_board .more a {color: #fff;}
+.news .sub_board .line {width: 583px; height: 1px; background: #cfcfcf; margin-top: 40px; margin-bottom: 20px;}
+
+
+/* 센터정보 */
+#section03 {width: 100%; height: 734px; background: url('../images/bg_main_center.jpg') center top; background-size: cover;}
+#section03 h2 {color: #777; text-align: center; font-size: 26px; font-weight: bold; line-height: 19px; padding-top: 118px; }
+
+#section03 .center_list ul {position: relative; float: left;  margin-right: 20px;}
+#section03 .picture {width: 179px; height: 238px;  float: left;  margin-top: 80px; z-index: 1; } 
+#section03 ul:last-child {margin-right: 0;}
+#section03 .small_box {width: 160px; height: 120px; background: #fff; float: left; position: absolute; top: 260px; left: 30px; z-index: 2;}
+#section03 .small_box .title {width: 130px; height: 23px; font-size: 16px; color: #15000d; padding-top: 10px; padding-bottom: 10px; text-align: center; font-weight: bold;}
+#section03 .small_box .explain {width: 130px; height: 47px; font-size: 14px; color: #7d7d81; padding-bottom: 20px; padding-left: 20px;}
+
+
+/* 푸터 */
+#footer {width: 100%; height: 220px; background: #595553; margin-top: 500px;}
+#footer .address {width: 1200px; height: 106px;  margin: 65px auto 65px auto; position: absolute;}
+#footer .address p {font-size: 16px; color: #9b9ca1; float: left; padding-bottom: 20px; }
+/* #footer .address > span {padding-right: 50px;}
+#footer .address i {font-style: normal; display: block; color: #777; margin-top: 17px; } */
+
+#footer .icon {float: left; margin-bottom: 10px; }
+#footer .icon img {width: 100%;  }
+
+
+#footer .call_box {width: 272px; height: 68px; font-size: 12px; color: #a69f9f; float: left;}
+#footer .call_box > span {padding-left: 50px; display: block; }
+
+
+
+
+
+
+/* 서브페이지01_01 이사장 인사말 */
+#visual_sub {width: 100%; min-width: 1200px; height: 326px; background: url('../images/sub_visual.jpg') center top no-repeat; background-size: cover; position: relative; display: flex; align-items: center; justify-content: center;}
+
+#visual_sub .text_box {width: 500px; height: 100px; text-align: center; color: #fff;; padding-top: 100px}
+#visual_sub .text_box hr {width: 333px; margin: 0 auto;}
+#visual_sub .text_box strong {font-size: 57px; display: block; font-weight: normal; margin-bottom: 10px;}
+#visual_sub .text_box span {font-size: 18px; display: block;}
+
+
+
+#section_sub {width: 1200px; margin: 35px auto 0 auto; text-align: center;}
+#section_sub .snb {text-align: center; font-size: 0; display: inline-block; font-size: 1px;}
+
+#section_sub .snb li {display: inline-block; vertical-align: top; width: 217px; height: 65px; line-height: 65px; font-size: 18px; border: 1px solid #e9e9e9; }
+
+#section_sub .snb li a {color: #888; display: block;;}
+
+#section_sub .snb li.on {border-bottom: 0; border-top: 1px solid #818181;}
+
+
+#section_sub .article {margin: 67px auto 0 auto;  position: relative;}
+#section_sub .article h2 {font-size: 35px; color: #888; font-weight: normal;}
+#section_sub .article hr {width: 560px; color: #888; margin: 20px auto 0;}
+
+#section_sub .article img {width: 100%; margin: 137px auto 0 auto; }
+
+#section_sub .visual_text {position: absolute; width: 735px; height: 90px; top: 350px; left: 407px;}
+
+#section_sub .visual_text p {font-size: 40px; color: #444; text-align: right;}
+
+#section_sub .visual_text p:last-child {font-size: 20px; color: #277c4d; text-align: right; margin-top: 17px;}
+
+#section_sub .cont {margin-top: 150px;}
+#section_sub .cont p {font-size: 18px; color: #555; text-align: left; line-height: 1.6em; margin-bottom: 30px; text-align: justify;}
+#section_sub .sign {width: 300px; height: 40px; float: right;}
+#section_sub .cont span {font-size: 18px; color: #555; text-align: right;}
+#section_sub .cont span:last-child {font-weight: bold; font-size: 20px; color: #222;}
+
+
+
+#section_sub .bg_section {width: 779px; height: 1035px; position: absolute; right: 0; top: 247px; }
+
+
+/* 서브페이지01_02 미션과 비전 */
+#section_sub .vision {margin: 67px auto 0 auto;  position: relative;}
+#section_sub .mivi {width: 100%; height: 495px;  margin-top: 110px; position: relative;}
+
+/* 미션 동그라미 */
+.mission_box ul {width: 250px; height: 340px; float: left; }
+.mission_box .mission {position: absolute; right: 50%; margin-right: 150px; margin-top: 110px;}
+
+.mission_box .mission .circle {width: 233px; height: 233px;  border-radius: 50%; background: #2ea0a1; position: relative; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+.mission_box .circle p {line-height: 1.4em; color: #b8d9da; font-size: 18px; margin-top: 20px;}
+
+.mission_box em {color: #fff; font-size: 30px; font-style: normal;margin-top: 70px; display: block; text-align: center; border-bottom: 1px solid #fff; width: 150px; margin: 0 auto; font-size: 28px; height: 50px; line-height: 50px;}
+.mission_box .explain {width: 245px; font-size: 20px; color: #217576; padding-top: 45px; text-align: left; }
+.mission_box .explain p {position: relative; line-height: 1.4em; color: #217576; font-size: 18px; margin-bottom: 12px; letter-spacing: -0.06em;}
+.mission_box .explain p::before {content: ''; width: 8px; height: 1px; background: #217576; position: absolute; left: -15px; top:10px}
+
+
+/* 비전 동그라미 */
+.mission_box .vvision {position: absolute; left: 50%; margin-top: 110px; margin-left: 150px; }
+
+.mission_box .vvision .circle {width: 233px; height: 233px;  border-radius: 50%; background: #2e6ba0; position: relative; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+
+
+/* 가운데 회색 선 */
+.line {width: 1px; height: 350px; background: #c0c0c0; position: relative; left: 50%; top:230px}
+
+.grey_circle {width: 30px; height: 30px; border-radius: 50%; border: 1px solid #c0c0c0; position: absolute; top: -30px; left: -15px;}
+.grey_circle:before {content: ''; width: 46px; height: 1px; background: #c0c0c0; position: absolute; right: 30px; top: 15px;}
+.grey_circle::after {content: ''; width: 46px; height: 1px; background: #c0c0c0; position: absolute; left: 30px; top: 15px;}
+
+/* 병원마크랑 핵심가치 */
+.mark .image {width: 110px; height: 110px; border: 1px solid #000; position: absolute; left: 50%; right: 55px;}
